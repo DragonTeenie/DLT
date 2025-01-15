@@ -3,20 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DLT.com | Beleving</title>
+    <title>Beleving van de Cast</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="DLT-32px.png">
+    <script src="script.js" defer></script>
 </head>
 <body>
-<header></header>
-
-    <div id="beleving" class="content">
+    <header></header>
+    <main>
         <h1>Beleving van de Cast</h1>
-        <p>Ontdek de verhalen en ervaringen van onze castleden achter de schermen.</p>
+        <div class="dropdown">
+            <label for="category">Categorie:</label>
+            <select id="category">
+                <option value="acteurs">Acteurs</option>
+                <option value="techniek">Techniek</option>
+                <option value="decor">Decor</option>
+            </select>
+        </div>
+        <div class="grid" id="grid">
+        </div>
+    </main>
+    <div id="popup" class="popup hidden">
+        <button id="closePopup">X</button>
+        <h2 id="popupName"></h2>
+        <p id="popupRole"></p>
+        <p id="popupStory"></p>
     </div>
-
     <footer></footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
